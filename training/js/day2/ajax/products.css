@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#topoffers{
+
+}
+#topoffers .prod img, #topfashion .prod img{
+	width: 100px;
+}
+#topoffers .prod:hover, #topfashion .prod:hover{
+	transform: scale(1.1);
+}
+#topoffers .prod, #topfashion .prod{
+	text-align: center;
+	width: 120px;
+	height: 250px;
+	float: left;
+	margin-right: 5px;
+	padding: 15px;
+	border: 1px solid tomato;
+}
+#topoffers .title, #topfashion .title{
+	padding: 5px;
+	color: salmon;
+	font-weight: bold;
+}
+#topoffers .text, #topfashion .text{
+	padding: 5px;
+	color: salmon;
+}
+
+.clear{
+	clear: both;
+}

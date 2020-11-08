@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604645919667' stop='1604645941013'>
+    <name>Multi Frames Test</name>
+    <title>Multi Frames Test</title>
+    <test-cases>
+        <test-case start='1604645919668' status='undefined'>
+            <name>navigating frames with in htmlpage</name>
+            <title>navigating frames with in htmlpage</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604645919668' status='passed' stop='1604645941011'>
+            <name>navigating frames with in htmlpage</name>
+            <title>navigating frames with in htmlpage</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c763b53f-367c-42e7-9e4a-783732afd5c0-attachment.png' type='image/png' size='171352'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

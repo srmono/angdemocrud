@@ -1,0 +1,7 @@
+{
+  "url": "https://www.protractortest.org/",
+  "type": "Testing Tool",
+  "supports":{
+    "tool": "Jasmine"
+  }
+}

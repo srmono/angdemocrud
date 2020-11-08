@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604644723438' stop='1604644737920'>
+    <name>Multi Frames Test</name>
+    <title>Multi Frames Test</title>
+    <test-cases>
+        <test-case start='1604644723438' status='passed' stop='1604644737919'>
+            <name>navigating frames with in htmlpage</name>
+            <title>navigating frames with in htmlpage</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

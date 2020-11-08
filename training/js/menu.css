@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#menu{
+	background: gold;
+}
+#menu ul{
+	list-style:  none;
+}
+#menu ul li{
+	display: inline;
+}
+#menu ul li a:link{
+	display: inline-block;
+	background: salmon;
+	text-decoration: none;
+	padding: 15px 25px;
+	color: #fff;
+}
+

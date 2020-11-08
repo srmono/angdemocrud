@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604639679913' stop='1604639696724'>
+    <name>Context Menu</name>
+    <title>Context Menu</title>
+    <test-cases>
+        <test-case start='1604639679913' status='passed' stop='1604639696723'>
+            <name>drag and drop test</name>
+            <title>drag and drop test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

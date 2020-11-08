@@ -1,0 +1,1286 @@
+<html><head><meta charset="utf-8"><style>body { font-family: Arial; }ul { list-style-position: inside; }li img { max-width: 100%; }span.passed { padding: 0 1em; color: green; }span.failed { padding: 0 1em; color: red; }span.pending { padding: 0 1em; color: orange; }span.stacktrace { white-space: pre; border: 1px solid rgb(0, 0, 0); font-size: 9pt; padding: 4px; background-color: rgb(204, 204, 204); }</style><script type="text/javascript">function showhide(id) {var e = document.getElementById(id);e.style.display = (e.style.display === "block") ? "none" : "block";}function buildQuickLinks() {var failedSpecs = document.querySelectorAll("li.failed");var quickLinksContainer = document.getElementById("quickLinks");if (!quickLinksContainer) return;if (failedSpecs.length > 0) { document.getElementById("quickLinksHeader").textContent = "Quicklink of Failure"}for (var i = 0; i < failedSpecs.length; ++i) {var li = document.createElement("li");var a = document.createElement("a");a.href = "#" + failedSpecs[i].id;a.textContent = failedSpecs[i].dataset.name + "  (" + failedSpecs[i].dataset.browser + ")";li.appendChild(a);quickLinksContainer.appendChild(li);}}function updatePassCount() {var totalPassed = document.querySelectorAll("li.passed").length;var totalFailed = document.querySelectorAll("li.failed").length;var totalSpecs = totalFailed + totalPassed;console.log("passed: %s, failed: %s, total: %s", totalPassed, totalFailed, totalSpecs);document.getElementById("summaryTotalSpecs").textContent = document.getElementById("summaryTotalSpecs").textContent + totalSpecs;document.getElementById("summaryTotalFailed").textContent = document.getElementById("summaryTotalFailed").textContent + totalFailed;if (totalFailed) {document.getElementById("summary").className = "failed";}}function start() {updatePassCount();buildQuickLinks();}window.onload = start;</script></head><body><h1>Report</h1><div id="summary" class="passed"><h4>Summary</h4><ul><li id="summaryTotalSpecs">Total specs tested: </li><li id="summaryTotalFailed">Total failed: </li></ul></div><ul style="list-style-type:none"><h4>Context Menu (16 s)</h4><li id="2ead6620-1ff0-11eb-a9ec-85c1701bf9c3" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="29d4593059a5931ed0c9a4b1b43a9fb3.png">drag and drop test</a>(16 s)</li></ul><a href="javascript:showhide('2ead8d30-1ff0-11eb-a9ec-85c1701bf9c3')">Toggle Configuration</a><div class="config" id="2ead8d30-1ff0-11eb-a9ec-85c1701bf9c3" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div></body></html><ul style="list-style-type:none"><h4>Context Menu (14 s)</h4><li id="9cfaa230-1ff2-11eb-804a-0914d50f1706" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="4301e07c43893f858d9a35fa537182a7.png">drag and drop test</a>(14 s)</li></ul><a href="javascript:showhide('9cfaa231-1ff2-11eb-804a-0914d50f1706')">Toggle Configuration</a><div class="config" id="9cfaa231-1ff2-11eb-804a-0914d50f1706" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (19 s)</h4><li id="dd39d4b0-1ff7-11eb-82ee-cf3b232a9d3f" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="25b90004c633e4a424be69ccce8ef8f0.png">drag and drop test</a>(15 s)</li><li id="dd39fbc0-1ff7-11eb-82ee-cf3b232a9d3f" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="5ce95523c877857fe66077dab9c5f5a7.png">drag and drop test two</a>(0.308 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="dd39fbc1-1ff7-11eb-82ee-cf3b232a9d3f" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="a6079971564f9c0d3dd2ebe7c5c531da.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('dd3a22d0-1ff7-11eb-82ee-cf3b232a9d3f')">Toggle Configuration</a><div class="config" id="dd3a22d0-1ff7-11eb-82ee-cf3b232a9d3f" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="6c68a580-1ff8-11eb-a09e-5558f0eb8bf1" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="5cd427275ec677bc39376c6fb5376615.png">drag and drop test</a>(14 s)</li><li id="6c68a581-1ff8-11eb-a09e-5558f0eb8bf1" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="368478f1de51abcef098bb98a2ddd042.png">drag and drop test two</a>(0.299 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="6c68cc90-1ff8-11eb-a09e-5558f0eb8bf1" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="289e0271b14bed3c4fd7d082a7963510.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('6c68f3a0-1ff8-11eb-a09e-5558f0eb8bf1')">Toggle Configuration</a><div class="config" id="6c68f3a0-1ff8-11eb-a09e-5558f0eb8bf1" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="1e26d030-1ff9-11eb-8315-ef1066931c85" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="97d3b7b21b77b7efd9c7c161824e52ff.png">drag and drop test</a>(14 s)</li><li id="1e26f740-1ff9-11eb-8315-ef1066931c85" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="a661b8bae71f40eb3526b09fbdb34f36.png">drag and drop test two</a>(0.391 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="1e271e50-1ff9-11eb-8315-ef1066931c85" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="3b124f82f305449a711aa0892908cf29.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('1e274560-1ff9-11eb-8315-ef1066931c85')">Toggle Configuration</a><div class="config" id="1e274560-1ff9-11eb-8315-ef1066931c85" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (19 s)</h4><li id="19ba0ac0-1ffa-11eb-bb2f-818ee9281d15" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="026f6fc333d2c1a0cc4d4168f2ca1dc5.png">drag and drop test</a>(14 s)</li><li id="19ba0ac1-1ffa-11eb-bb2f-818ee9281d15" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="70c7c87fd6f33207a5994821ac6ece6f.png">drag and drop test two</a>(0.343 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="19ba31d0-1ffa-11eb-bb2f-818ee9281d15" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="965f291b9fbeb8bc2435bacbd88b89a9.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (15 s)</h4><li id="19ba31d1-1ffa-11eb-bb2f-818ee9281d15" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="3cc312016efc0e58bcd7e0dc00dbb856.png">navigating frames with in htmlpage</a>(15 s)</li></ul><a href="javascript:showhide('19ba58e0-1ffa-11eb-bb2f-818ee9281d15')">Toggle Configuration</a><div class="config" id="19ba58e0-1ffa-11eb-bb2f-818ee9281d15" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="bfaa0d90-1ffa-11eb-8d98-3546e0929e2a" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="b15e6af0b5c30131ef18a8810e4e6ee3.png">drag and drop test</a>(14 s)</li><li id="bfaa34a0-1ffa-11eb-8d98-3546e0929e2a" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="bbee890157afcd42e6f6800b1bb1dc8f.png">drag and drop test two</a>(0.32 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="bfaa34a1-1ffa-11eb-8d98-3546e0929e2a" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="184199b88a2e32465b4cd0868d829a4b.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (14 s)</h4><li id="bfaa5bb0-1ffa-11eb-8d98-3546e0929e2a" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="6630418d593ed6ff5a7ee8b303269b68.png">navigating frames with in htmlpage</a>(14 s)</li></ul><a href="javascript:showhide('bfaa5bb1-1ffa-11eb-8d98-3546e0929e2a')">Toggle Configuration</a><div class="config" id="bfaa5bb1-1ffa-11eb-8d98-3546e0929e2a" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="0a0d0590-1ffb-11eb-b0a2-eb503d24d58e" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="e1576c2e238f5ea836505227c6d71968.png">drag and drop test</a>(14 s)</li><li id="0a0d0591-1ffb-11eb-b0a2-eb503d24d58e" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="cf42150ce5340d9788712c32f5737c1a.png">drag and drop test two</a>(0.331 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="0a0d2ca0-1ffb-11eb-b0a2-eb503d24d58e" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="9595a3838b1e8edefa2dbb5b23f1b171.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (14 s)</h4><li id="0a0d53b0-1ffb-11eb-b0a2-eb503d24d58e" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="0203d78d19d253decfe1ee129f3fa15e.png">navigating frames with in htmlpage</a>(14 s)</li></ul><a href="javascript:showhide('0a0d53b1-1ffb-11eb-b0a2-eb503d24d58e')">Toggle Configuration</a><div class="config" id="0a0d53b1-1ffb-11eb-b0a2-eb503d24d58e" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="24199200-1ffb-11eb-9c3b-d95d211efe55" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="084d4feee0c791661e469abe5bd2c881.png">drag and drop test</a>(14 s)</li><li id="2419b910-1ffb-11eb-9c3b-d95d211efe55" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="ee4d1f5be7deb5b29ce7f2d2bae53f06.png">drag and drop test two</a>(0.305 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="2419b911-1ffb-11eb-9c3b-d95d211efe55" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="5dba06d4d139b216a5c17d14abbf4020.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (15 s)</h4><li id="2419b912-1ffb-11eb-9c3b-d95d211efe55" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="28215711548d76736821b8b73b60fc1b.png">navigating frames with in htmlpage</a>(15 s)</li></ul><a href="javascript:showhide('2419e020-1ffb-11eb-9c3b-d95d211efe55')">Toggle Configuration</a><div class="config" id="2419e020-1ffb-11eb-9c3b-d95d211efe55" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (0.039 s)</h4><li title="No screenshot was created for this test case." id="0c34f930-1ffc-11eb-ae7f-61517de40093" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span>drag and drop test (0.008 s)</li><li title="No screenshot was created for this test case." id="0c352040-1ffc-11eb-ae7f-61517de40093" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span>drag and drop test two (0.005 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new Promise (&lt;anonymous&gt;)
+    at SimpleScheduler.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2232:22
+    at new Promise (&lt;anonymous&gt;)
+    at SimpleScheduler.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at SimpleScheduler.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2227:17)
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li title="No screenshot was created for this test case." id="0c354750-1ffc-11eb-ae7f-61517de40093" class="passed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="passed">&#10003;</span>drag and drop test 3 (0.019 s)</li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (0.011 s)</h4><li title="No screenshot was created for this test case." id="0c354751-1ffc-11eb-ae7f-61517de40093" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span>navigating frames with in htmlpage (0.008 s)</li></ul><a href="javascript:showhide('0c356e60-1ffc-11eb-ae7f-61517de40093')">Toggle Configuration</a><div class="config" id="0c356e60-1ffc-11eb-ae7f-61517de40093" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (0.043 s)</h4><li title="No screenshot was created for this test case." id="166e0220-1ffc-11eb-8078-f1395f614fec" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span>drag and drop test (0.011 s)</li><li title="No screenshot was created for this test case." id="166e2930-1ffc-11eb-8078-f1395f614fec" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span>drag and drop test two (0.008 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new Promise (&lt;anonymous&gt;)
+    at SimpleScheduler.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2232:22
+    at new Promise (&lt;anonymous&gt;)
+    at SimpleScheduler.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+    at SimpleScheduler.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2227:17)
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li title="No screenshot was created for this test case." id="166e5040-1ffc-11eb-8078-f1395f614fec" class="passed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="passed">&#10003;</span>drag and drop test 3 (0.019 s)</li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (0.014 s)</h4><li title="No screenshot was created for this test case." id="166e5041-1ffc-11eb-8078-f1395f614fec" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span>navigating frames with in htmlpage (0.01 s)</li></ul><a href="javascript:showhide('166ec570-1ffc-11eb-8078-f1395f614fec')">Toggle Configuration</a><div class="config" id="166ec570-1ffc-11eb-8078-f1395f614fec" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (8 s)</h4><li id="7890fe80-1ffc-11eb-84dd-592290d4918f" class="failed" data-spec="spec0" data-name="drag and drop test" data-browser="firefox"><span class="failed">&#10007;</span><a href="5a9d5cd482e6c1a6a4259e9eb7772fb3.png">drag and drop test</a>(4 s)<ul><li>Failed: HTTP method not allowed [<a href="javascript:showhide('spec0--firefox-0')">stack</a>]<br/><span style="display: none" id="spec0--firefox-0" class="stacktrace">WebDriverError: HTTP method not allowed
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:536:11)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: mouseMove
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:124:23
+    at Array.map (&lt;anonymous&gt;)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:123:29
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: ActionSequence.perform
+    at ActionSequence.perform (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:122:33)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:18:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+From: Task: Run it(&quot;drag and drop test&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:8:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="78914ca0-1ffc-11eb-84dd-592290d4918f" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="firefox"><span class="failed">&#10007;</span><a href="05bea08c61206150f43f99a7a3152b17.png">drag and drop test two</a>(0.321 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1--firefox-0')">stack</a>]<br/><span style="display: none" id="spec1--firefox-0" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="78914ca1-1ffc-11eb-84dd-592290d4918f" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="firefox"><span class="failed">&#10007;</span><a href="612c735ccb560d74885807502a0863aa.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2--firefox-0')">stack</a>]<br/><span style="display: none" id="spec2--firefox-0" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (4 s)</h4><li id="78914ca2-1ffc-11eb-84dd-592290d4918f" class="failed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="firefox"><span class="failed">&#10007;</span><a href="5f4870dc5c9c866f8bcc2672edb2c77a.png">navigating frames with in htmlpage</a>(4 s)<ul><li>Failed: data did not match any variant of untagged enum FrameId at line 1 column 25 [<a href="javascript:showhide('spec3--firefox-0')">stack</a>]<br/><span style="display: none" id="spec3--firefox-0" class="stacktrace">InvalidArgumentError: data did not match any variant of untagged enum FrameId at line 1 column 25
+    at Object.throwDecodedError (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:514:15)
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.switchTo().frame(packageListFrame)
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at TargetLocator.frame (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1824:25)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:12:28)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25
+From: Task: Run it(&quot;navigating frames with in htmlpage&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:6:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('78914ca3-1ffc-11eb-84dd-592290d4918f')">Toggle Configuration</a><div class="config" id="78914ca3-1ffc-11eb-84dd-592290d4918f" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  firefox</li><li>Browser version:  </li><li>Platform:  </li><li>Javascript enabled:  </li><li>Css selectors enabled:  </li></div><ul style="list-style-type:none"><h4>Context Menu (19 s)</h4><li id="82b790e0-1ffc-11eb-b0d1-6305d3c7b7e1" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="1de0f7919580341eb3bd97fae767d391.png">drag and drop test</a>(14 s)</li><li id="82b7b7f0-1ffc-11eb-b0d1-6305d3c7b7e1" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="879f45ae13c5ad7dddaca30e12902432.png">drag and drop test two</a>(0.313 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="82b7b7f1-1ffc-11eb-b0d1-6305d3c7b7e1" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="d879bea8063fd55aa732e3b7bf5ea9c2.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><ul style="list-style-type:none"><h4>Multi Frames Test (14 s)</h4><li id="82b7b7f2-1ffc-11eb-b0d1-6305d3c7b7e1" class="passed" data-spec="spec3" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="269f234822ba747c92b0f15cb8ad3cdc.png">navigating frames with in htmlpage</a>(14 s)</li></ul><a href="javascript:showhide('82b7df00-1ffc-11eb-b0d1-6305d3c7b7e1')">Toggle Configuration</a><div class="config" id="82b7df00-1ffc-11eb-b0d1-6305d3c7b7e1" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Multi Frames Test (14 s)</h4><li id="bab0a310-1ffc-11eb-9eef-a9466d87b881" class="passed" data-spec="spec0" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="8ca709294bc980a87e020ee68b3f4424.png">navigating frames with in htmlpage</a>(14 s)</li></ul><a href="javascript:showhide('bab0ca20-1ffc-11eb-9eef-a9466d87b881')">Toggle Configuration</a><div class="config" id="bab0ca20-1ffc-11eb-9eef-a9466d87b881" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (18 s)</h4><li id="bca2d620-1ffc-11eb-adc7-ed718e09ecac" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="d28798e21bc4a78d6ad2d27a4ecbd0a8.png">drag and drop test</a>(14 s)</li><li id="bca2fd30-1ffc-11eb-adc7-ed718e09ecac" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="0341c0dcdb7b5727170811367cb183f2.png">drag and drop test two</a>(0.387 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="bca32440-1ffc-11eb-adc7-ed718e09ecac" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="8a55718180d99b5f6bc657d538ead8f6.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('bca32441-1ffc-11eb-adc7-ed718e09ecac')">Toggle Configuration</a><div class="config" id="bca32441-1ffc-11eb-adc7-ed718e09ecac" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Multi Frames Test (4 s)</h4><li id="e5525550-1ffc-11eb-a608-3bd33a17bb3b" class="failed" data-spec="spec0" data-name="navigating frames with in htmlpage" data-browser="firefox"><span class="failed">&#10007;</span><a href="675ec001bb050ad3d8315a628e10c789.png">navigating frames with in htmlpage</a>(4 s)<ul><li>Failed: data did not match any variant of untagged enum FrameId at line 1 column 25 [<a href="javascript:showhide('spec0--firefox-0')">stack</a>]<br/><span style="display: none" id="spec0--firefox-0" class="stacktrace">InvalidArgumentError: data did not match any variant of untagged enum FrameId at line 1 column 25
+    at Object.throwDecodedError (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:514:15)
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.switchTo().frame(packageListFrame)
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at TargetLocator.frame (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1824:25)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:12:28)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+From: Task: Run it(&quot;navigating frames with in htmlpage&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:6:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('e552a370-1ffc-11eb-a608-3bd33a17bb3b')">Toggle Configuration</a><div class="config" id="e552a370-1ffc-11eb-a608-3bd33a17bb3b" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  firefox</li><li>Browser version:  </li><li>Platform:  </li><li>Javascript enabled:  </li><li>Css selectors enabled:  </li></div><ul style="list-style-type:none"><h4>Context Menu (9 s)</h4><li id="e7a7de10-1ffc-11eb-af85-e9049969d608" class="failed" data-spec="spec0" data-name="drag and drop test" data-browser="firefox"><span class="failed">&#10007;</span><a href="e47818d02a229f734e33bfa25ca7768a.png">drag and drop test</a>(5 s)<ul><li>Failed: HTTP method not allowed [<a href="javascript:showhide('spec0--firefox-0')">stack</a>]<br/><span style="display: none" id="spec0--firefox-0" class="stacktrace">WebDriverError: HTTP method not allowed
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:536:11)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: mouseMove
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:124:23
+    at Array.map (&lt;anonymous&gt;)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:123:29
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: ActionSequence.perform
+    at ActionSequence.perform (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:122:33)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:18:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+From: Task: Run it(&quot;drag and drop test&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:8:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="e7a80520-1ffc-11eb-af85-e9049969d608" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="firefox"><span class="failed">&#10007;</span><a href="664debb796ca252177029bb29ebf05a3.png">drag and drop test two</a>(0.385 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1--firefox-0')">stack</a>]<br/><span style="display: none" id="spec1--firefox-0" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="e7a80521-1ffc-11eb-af85-e9049969d608" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="firefox"><span class="failed">&#10007;</span><a href="cb7288d220e920aa0e9a929412cffd64.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2--firefox-0')">stack</a>]<br/><span style="display: none" id="spec2--firefox-0" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('e7a82c30-1ffc-11eb-af85-e9049969d608')">Toggle Configuration</a><div class="config" id="e7a82c30-1ffc-11eb-af85-e9049969d608" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  firefox</li><li>Browser version:  </li><li>Platform:  </li><li>Javascript enabled:  </li><li>Css selectors enabled:  </li></div><ul style="list-style-type:none"><h4>Multi Frames Test (19 s)</h4><li id="ea369f40-1ffc-11eb-8b8b-af51a54c4c5b" class="passed" data-spec="spec0" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="94070fc19a812271f5bc641070ff2ef5.png">navigating frames with in htmlpage</a>(19 s)</li></ul><a href="javascript:showhide('ea36c650-1ffc-11eb-8b8b-af51a54c4c5b')">Toggle Configuration</a><div class="config" id="ea36c650-1ffc-11eb-8b8b-af51a54c4c5b" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (20 s)</h4><li id="eb550790-1ffc-11eb-b594-49ffac98f703" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="ebd51468822ef1176e6a4ffc02c6aaa6.png">drag and drop test</a>(16 s)</li><li id="eb552ea0-1ffc-11eb-b594-49ffac98f703" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="d77c5db0ff826c5b2a948ab0a465619a.png">drag and drop test two</a>(0.377 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="eb5555b0-1ffc-11eb-b594-49ffac98f703" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="f623967fdbf82d3842b5505e7413c649.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('eb557cc0-1ffc-11eb-b594-49ffac98f703')">Toggle Configuration</a><div class="config" id="eb557cc0-1ffc-11eb-b594-49ffac98f703" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Multi Frames Test (4 s)</h4><li id="85348250-1ffd-11eb-8303-6d305f64652a" class="failed" data-spec="spec0" data-name="navigating frames with in htmlpage" data-browser="firefox"><span class="failed">&#10007;</span><a href="94b71c39347fe96fe64abc184b133837.png">navigating frames with in htmlpage</a>(4 s)<ul><li>Failed: data did not match any variant of untagged enum FrameId at line 1 column 25 [<a href="javascript:showhide('spec0--firefox-0')">stack</a>]<br/><span style="display: none" id="spec0--firefox-0" class="stacktrace">InvalidArgumentError: data did not match any variant of untagged enum FrameId at line 1 column 25
+    at Object.throwDecodedError (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:514:15)
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.switchTo().frame(packageListFrame)
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at TargetLocator.frame (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1824:25)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:12:28)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+From: Task: Run it(&quot;navigating frames with in htmlpage&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:6:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\multiframes.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('8534d070-1ffd-11eb-8303-6d305f64652a')">Toggle Configuration</a><div class="config" id="8534d070-1ffd-11eb-8303-6d305f64652a" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  firefox</li><li>Browser version:  </li><li>Platform:  </li><li>Javascript enabled:  </li><li>Css selectors enabled:  </li></div><ul style="list-style-type:none"><h4>Context Menu (9 s)</h4><li id="8847dcd0-1ffd-11eb-98b7-458ce6be891b" class="failed" data-spec="spec0" data-name="drag and drop test" data-browser="firefox"><span class="failed">&#10007;</span><a href="9c3e1b045fbfa2e189a7800629871d78.png">drag and drop test</a>(5 s)<ul><li>Failed: HTTP method not allowed [<a href="javascript:showhide('spec0--firefox-0')">stack</a>]<br/><span style="display: none" id="spec0--firefox-0" class="stacktrace">WebDriverError: HTTP method not allowed
+    at parseHttpResponse (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:536:11)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: mouseMove
+    at Driver.schedule (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:124:23
+    at Array.map (&lt;anonymous&gt;)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:123:29
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: ActionSequence.perform
+    at ActionSequence.perform (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:122:33)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:18:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+From: Task: Run it(&quot;drag and drop test&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:8:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="884803e0-1ffd-11eb-98b7-458ce6be891b" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="firefox"><span class="failed">&#10007;</span><a href="10b02df037cfb1420cbd5925284ea136.png">drag and drop test two</a>(0.543 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1--firefox-0')">stack</a>]<br/><span style="display: none" id="spec1--firefox-0" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="88482af0-1ffd-11eb-98b7-458ce6be891b" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="firefox"><span class="failed">&#10007;</span><a href="da2a9fc789a14faba0ae4a0154bf2c77.png">drag and drop test 3</a>(4 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2--firefox-0')">stack</a>]<br/><span style="display: none" id="spec2--firefox-0" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('88482af1-1ffd-11eb-98b7-458ce6be891b')">Toggle Configuration</a><div class="config" id="88482af1-1ffd-11eb-98b7-458ce6be891b" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  firefox</li><li>Browser version:  </li><li>Platform:  </li><li>Javascript enabled:  </li><li>Css selectors enabled:  </li></div><ul style="list-style-type:none"><h4>Multi Frames Test (21 s)</h4><li id="8cc304b0-1ffd-11eb-bb1d-c359cedb3c7a" class="passed" data-spec="spec0" data-name="navigating frames with in htmlpage" data-browser="chrome"><span class="passed">&#10003;</span><a href="eab71f99b873a2a7dde3a52211c22b87.png">navigating frames with in htmlpage</a>(21 s)</li></ul><a href="javascript:showhide('8cc352d0-1ffd-11eb-bb1d-c359cedb3c7a')">Toggle Configuration</a><div class="config" id="8cc352d0-1ffd-11eb-bb1d-c359cedb3c7a" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div><ul style="list-style-type:none"><h4>Context Menu (23 s)</h4><li id="8d7e1750-1ffd-11eb-ad32-c57ba4151503" class="passed" data-spec="spec0" data-name="drag and drop test" data-browser="chrome"><span class="passed">&#10003;</span><a href="0dcec4f2c49a3db596afbc1649b97786.png">drag and drop test</a>(17 s)</li><li id="8d7e3e60-1ffd-11eb-ad32-c57ba4151503" class="failed" data-spec="spec1" data-name="drag and drop test two" data-browser="chrome"><span class="failed">&#10007;</span><a href="52fc801bc468df3f684e9c8713d65576.png">drag and drop test two</a>(0.77 s)<ul><li>Failed: browser.actions(...).click(...).performss is not a function [<a href="javascript:showhide('spec1-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec1-Windows-chrome-86.0.4240.1830" class="stacktrace">TypeError: browser.actions(...).click(...).performss is not a function
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:33:66)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Run it(&quot;drag and drop test two&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:23:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li><li id="8d7e6570-1ffd-11eb-ad32-c57ba4151503" class="failed" data-spec="spec2" data-name="drag and drop test 3" data-browser="chrome"><span class="failed">&#10007;</span><a href="2c3838ef816e9f79b7ccd48075a04073.png">drag and drop test 3</a>(5 s)<ul><li>Failed: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss) [<a href="javascript:showhide('spec2-Windows-chrome-86.0.4240.1830')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-86.0.4240.1830" class="stacktrace">NoSuchElementError: No element found using locator: By(css selector, .context-menu-one.btn.btn-neutralss)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27
+    at ManagedPromise.invokeCallback_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.&lt;computed&gt; [as getId] (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at ActionSequence.scheduleMouseAction_ (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:189:14)
+    at ActionSequence.click (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\actions.js:288:17)
+    at UserContext.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:48:27)
+    at C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it(&quot;drag and drop test 3&quot;) in control flow
+    at UserContext.&lt;anonymous&gt; (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:38:5)
+    at addSpecsToSuite (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\bvsra\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.&lt;anonymous&gt; (D:\protractor\proctractordemo\tests\contextmenu.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)</span></li></ul></li></ul><a href="javascript:showhide('8d7e6571-1ffd-11eb-ad32-c57ba4151503')">Toggle Configuration</a><div class="config" id="8d7e6571-1ffd-11eb-ad32-c57ba4151503" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  86.0.4240.183</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div>
