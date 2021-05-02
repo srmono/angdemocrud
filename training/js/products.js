@@ -3,6 +3,7 @@ var topOffers = [
 		image: "prod1.jpeg",
 		title: "chairs Deals on (32inch) tv",
 		price: "999",
+		
 		cat: "Electronics"
 	},
 	{
